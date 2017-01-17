@@ -54,13 +54,13 @@ Using pip
 
 ::
 
-pip install spyder-{{ cookiecutter.plugin_name.lower().replace(' ', '_') }}
+pip install spyder_{{ cookiecutter.plugin_name.lower().replace(' ', '_') }}
 
 Using conda
 
 ::
 
-conda install spyder-{{ cookiecutter.plugin_name.lower().replace(' ', '_') }} -c conda-forge
+conda install spyder_{{ cookiecutter.plugin_name.lower().replace(' ', '_') }} -c conda-forge
 
 Usage
 -----
