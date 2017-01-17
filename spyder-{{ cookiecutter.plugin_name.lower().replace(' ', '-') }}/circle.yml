@@ -43,11 +43,11 @@ dependencies:
 test:
   override:
     # Check Python style
-    - $CMD_LINT_CIOCHECK spyder-{{ cookiecutter.plugin_name.lower().replace(' ', '-') }} -dt: # note the colon
+    - $CMD_LINT_CIOCHECK spyder_{{ cookiecutter.plugin_name.lower().replace(' ', '_') }} -dt: # note the colon
         parallel: true
 
     # Run Python tests
-    - $CMD_TEST_PYTEST spyder-{{ cookiecutter.plugin_name.lower().replace(' ', '-') }} --cov=spyder-{{ cookiecutter.plugin_name.lower().replace(' ', '-') }}: # note the colon        parallel: true
+    - $CMD_TEST_PYTEST spyder_{{ cookiecutter.plugin_name.lower().replace(' ', '_') }} --cov=spyder_{{ cookiecutter.plugin_name.lower().replace(' ', '_') }}: # note the colon        parallel: true
 
     # Python coverage and post it to coveralls.io
     - $CMD_TEST_COVERALLS:
