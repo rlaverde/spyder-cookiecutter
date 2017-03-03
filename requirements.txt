@@ -1,5 +1,5 @@
 cookiecutter
 
 # Testing
-pytest
+pytest==3.0.6
 pytest-cookies
