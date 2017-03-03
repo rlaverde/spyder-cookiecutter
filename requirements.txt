@@ -2,4 +2,4 @@ cookiecutter
 
 # Testing
 pytest
-pytest-cookies
+pytest-cookies==0.2.0
