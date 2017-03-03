@@ -1,4 +1,4 @@
-cookiecutter
+cookiecutter==1.5.1
 
 # Testing
 pytest
